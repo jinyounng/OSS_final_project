@@ -44,19 +44,5 @@ Open Source SW Final project
      주로 soft voting모델의 성능이 우수하여 주로 사용된다.
      
   4. Explain hyper-parameter of the function
-   4.1 hyperparameter of SVM
-     -
-     
-     
-   4.2 hyperparameter of Extratree
-     -
-     
-     
-   4.3 hyperparameter of randomforest
-     -
-     
-     
-   4.4 hyperparameter of KNN
-    - 
     
     
