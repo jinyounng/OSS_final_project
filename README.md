@@ -46,9 +46,17 @@ Open Source SW Final project
   4. Explain hyper-parameter of the function
    4.1 hyperparameter of SVM
      -
+     
+     
    4.2 hyperparameter of Extratree
      -
+     
+     
    4.3 hyperparameter of randomforest
      -
+     
+     
    4.4 hyperparameter of KNN
     - 
+    
+    
