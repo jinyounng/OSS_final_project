@@ -48,7 +48,7 @@ Open Source SW Final project
      Hard Voting모델은 다수의 classifier의 예측 결과값간 확률을 평균내어 최종 class를 결정하는 것
      주로 soft voting모델의 성능이 우수하여 주로 사용된다.
    
-   -나는 SVM,ExtraTree,RandomForest,KNN을 voting하여 최종결과값을 계산했다.
+   -나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
      
   4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
@@ -78,12 +78,16 @@ Open Source SW Final project
      4.min_sample_leaf : leaf node가 되기 위해 필요한 최소한의 샘플 데이터 수, 과적합을 제어하는 데 사용된다.
      5.random_state : 난수 seed를 설정한다.
     
-     내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
-     decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
      
    - ExtraTree의 hyper-Parameter:
      RandomForest의 hyper-parameter와 거의 동일하다.
-     RandomForest와 같이 n_estimator와 random_state을 바꿔주었다.
+     내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
+     decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
+     
+     
+ 
+    
+
      
   
          
