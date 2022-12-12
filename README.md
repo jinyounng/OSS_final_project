@@ -1,15 +1,15 @@
 # OSS_final_project
-Open Source SW Final project
+## Open Source SW Final project
 
-update in 12/09
+## update in 12/09
 
-#1. What you do in your project
+# 1. What you do in your project
    -튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것
    -data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
    -이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다
    -classifier와 더불어 가장 잘 맞는 parameter들을 찾아 높은 정확도를 구현한다.
    
-#2. Explain the training dataset
+# 2. Explain the training dataset
    - training dataset
    - ( glioma_tumor, meningioma_tumor, no_tumor, pituitary_tumor)로 분류된다
    - io.imread function을 사용하여 폴더에 있는 모든 사진을 불러온다
@@ -19,7 +19,7 @@ update in 12/09
    - 마지막으로, train data에 과적합되지 않도록, training, test set으로 나누어준다.
    - 그 후 사용할 classifier에 훈련시킨다
   
-#3. Explain the algorithm you choose
+# 3. Explain the algorithm you choose
    - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다
    
    - Extra forest classifier는 random forest와 비슷하지만, decision tree를 만들어 낼 때, 훈련 세트 전체를 사용하기 때문에
@@ -38,7 +38,7 @@ update in 12/09
    
    -나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
      
-#4. Explain hyper-parameter of the function
+# 4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
      1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
      2.degree : polynomial kernel function에서 차수를 결정한다.
@@ -74,7 +74,7 @@ update in 12/09
      decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
      
     
- ##이 코드의 가장 중요한 feature는 voting방식이였는데,
+ ## 이 코드의 가장 중요한 feature는 voting방식이였는데,
  어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
  하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
  많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
