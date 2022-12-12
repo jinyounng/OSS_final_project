@@ -6,7 +6,6 @@
 
 
 ### 1. What you do in your project
-
     - 튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것  
     - data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
     - 이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다   
@@ -42,7 +41,7 @@
      Hard Voting모델은 다수의 classifier의 예측 결과값간 확률을 평균내어 최종 class를 결정하는 것
      주로 soft voting모델의 성능이 우수하여 주로 사용된다.
    
-   -나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
+   - 나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
      
 ### 4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
