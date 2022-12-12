@@ -54,6 +54,7 @@
      
    
    - KNN의 hyper-Parameter:
+   
         1.algorithm : nearest neighbor을 계산하는데 사용하는 알고리즘으로 ball_tree, kd_tree, brute가 있다.
         2.metric: 거리 측정 방식을 변경하는 매개변수이다.
         3.n_jobs: neighbor을 검색하기 위해 실행하는 병렬 작업의 수.
@@ -62,7 +63,8 @@
 
         여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
 
-      - RandomForest의 hyper-Parameter:
+   -RandomForest의 hyper-Parameter:
+   
         1.n_estimators : decision tree의 개수를 의미한다. 증가시킨다고 해서 성능이 무조건적으로 향상되는 것은 아니다.
         2.max_features : decision tree의 max_features와 동일하다. decision tree에서 고려하는 특징 수, 또는 비율이다.
         3.max_depth : decision tree의 최대 깊이이다.
@@ -70,16 +72,19 @@
         5.random_state : 난수 seed를 설정한다.
 
 
-      - ExtraTree의 hyper-Parameter:
+   - ExtraTree의 hyper-Parameter:
+   
         RandomForest의 hyper-parameter와 거의 동일하다.
         내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
         decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
      
     
- ### 이 코드의 가장 중요한 feature는 voting방식이였는데,
-       어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
-       하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
-       많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
+#### Feature
+    
+     이 코드의 가장 중요한 feature는 voting방식이였는데,
+     어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
+     하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
+     많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
 
      
 ## 12/12 update imformation
