@@ -8,9 +8,13 @@
 ### 1. What you do in your project
 
     -튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것
+    
     -data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
+    
     -이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다
+    
     -classifier와 더불어 가장 잘 맞는 parameter들을 찾아 높은 정확도를 구현한다.
+    
    
 ### 2. Explain the training dataset
 
@@ -45,15 +49,15 @@
      
 ### 4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
-   
-        1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
-        2.degree : polynomial kernel function에서 차수를 결정한다.
-        3.gamma : kernel coefiicient for 'rbf' 'poly' 'sigmoid'
-                  즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
-        4.coef0 : polynomial kernel에 있는 상수항 r.
-        5.C : 오류를 얼마나 허용할 것인지 규제한다.
-        등이 있는데, 내가 tuning한 hyper-parameter는 C=11이다.
-     
+ 
+            1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
+            2.degree : polynomial kernel function에서 차수를 결정한다.
+            3.gamma : kernel coefiicient for 'rbf' 'poly' 'sigmoid'
+                      즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
+            4.coef0 : polynomial kernel에 있는 상수항 r.
+            5.C : 오류를 얼마나 허용할 것인지 규제한다.
+            등이 있는데, 내가 tuning한 hyper-parameter는 C=11이다.
+
      
    
    - KNN의 hyper-Parameter:
@@ -83,20 +87,20 @@
     
 #### Feature
     
-         이 코드의 가장 중요한 feature는 voting방식이였는데,
-         어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
-         하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
-         많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
+             이 코드의 가장 중요한 feature는 voting방식이였는데,
+             어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
+             하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
+             많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
 
      
 ## 12/12 update imformation
 
-          round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
-          SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
-          KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
-          또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
-          각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
-          
+              round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
+              SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
+              KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
+              또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
+              각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
+
           
 
   
