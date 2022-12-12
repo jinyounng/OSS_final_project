@@ -3,6 +3,13 @@
 
 ## update in 12/09
 ## reupdate in 12/12(round2)
+## 12/12 update imformation
+
+              round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
+              SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
+              KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
+              또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
+              각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
 
 
 ### 1. What you do in your project
@@ -90,13 +97,7 @@
              많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
 
      
-## 12/12 update imformation
 
-              round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
-              SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
-              KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
-              또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
-              각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
 
           
 
