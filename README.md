@@ -63,7 +63,6 @@
             3.n_jobs: neighbor을 검색하기 위해 실행하는 병렬 작업의 수.
             4.n_neighbors : 검색할 이웃의 수
             5.p : metric의 변수 minkowsi의 매개변수이다. p=1이면 맨허튼 거리공식, p=2이면 유클리디안 거리공식을 사용한다.
-
             여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
 
    -RandomForest의 hyper-Parameter:
@@ -91,11 +90,14 @@
 
      
 ## 12/12 update imformation
+
           round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
           SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
           KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
           또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
           각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
+          
+          
 
   
          
