@@ -42,51 +42,51 @@
      
 ### 4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
-     1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
-     2.degree : polynomial kernel function에서 차수를 결정한다.
-     3.gamma : kernel coefiicient for 'rbf' 'poly' 'sigmoid'
-               즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
-     4.coef0 : polynomial kernel에 있는 상수항 r.
-     5.C : 오류를 얼마나 허용할 것인지 규제한다.
-     
-     등이 있는데, 내가 tuning한 hyper-parameter는 C=11이다.
+        1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
+        2.degree : polynomial kernel function에서 차수를 결정한다.
+        3.gamma : kernel coefiicient for 'rbf' 'poly' 'sigmoid'
+                  즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
+        4.coef0 : polynomial kernel에 있는 상수항 r.
+        5.C : 오류를 얼마나 허용할 것인지 규제한다.
+
+        등이 있는데, 내가 tuning한 hyper-parameter는 C=11이다.
      
      
    
    - KNN의 hyper-Parameter:
-     1.algorithm : nearest neighbor을 계산하는데 사용하는 알고리즘으로 ball_tree, kd_tree, brute가 있다.
-     2.metric: 거리 측정 방식을 변경하는 매개변수이다.
-     3.n_jobs: neighbor을 검색하기 위해 실행하는 병렬 작업의 수.
-     4.n_neighbors : 검색할 이웃의 수
-     5.p : metric의 변수 minkowsi의 매개변수이다. p=1이면 맨허튼 거리공식, p=2이면 유클리디안 거리공식을 사용한다.
-     
-     여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
-   
-   - RandomForest의 hyper-Parameter:
-     1.n_estimators : decision tree의 개수를 의미한다. 증가시킨다고 해서 성능이 무조건적으로 향상되는 것은 아니다.
-     2.max_features : decision tree의 max_features와 동일하다. decision tree에서 고려하는 특징 수, 또는 비율이다.
-     3.max_depth : decision tree의 최대 깊이이다.
-     4.min_sample_leaf : leaf node가 되기 위해 필요한 최소한의 샘플 데이터 수, 과적합을 제어하는 데 사용된다.
-     5.random_state : 난수 seed를 설정한다.
-    
-     
-   - ExtraTree의 hyper-Parameter:
-     RandomForest의 hyper-parameter와 거의 동일하다.
-     내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
-     decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
+        1.algorithm : nearest neighbor을 계산하는데 사용하는 알고리즘으로 ball_tree, kd_tree, brute가 있다.
+        2.metric: 거리 측정 방식을 변경하는 매개변수이다.
+        3.n_jobs: neighbor을 검색하기 위해 실행하는 병렬 작업의 수.
+        4.n_neighbors : 검색할 이웃의 수
+        5.p : metric의 변수 minkowsi의 매개변수이다. p=1이면 맨허튼 거리공식, p=2이면 유클리디안 거리공식을 사용한다.
+
+        여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
+
+      - RandomForest의 hyper-Parameter:
+        1.n_estimators : decision tree의 개수를 의미한다. 증가시킨다고 해서 성능이 무조건적으로 향상되는 것은 아니다.
+        2.max_features : decision tree의 max_features와 동일하다. decision tree에서 고려하는 특징 수, 또는 비율이다.
+        3.max_depth : decision tree의 최대 깊이이다.
+        4.min_sample_leaf : leaf node가 되기 위해 필요한 최소한의 샘플 데이터 수, 과적합을 제어하는 데 사용된다.
+        5.random_state : 난수 seed를 설정한다.
+
+
+      - ExtraTree의 hyper-Parameter:
+        RandomForest의 hyper-parameter와 거의 동일하다.
+        내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
+        decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
      
     
  ### 이 코드의 가장 중요한 feature는 voting방식이였는데,
-    어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
-    하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
-    많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
+       어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
+       하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
+       많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
 
      
 ## 12/12 update imformation
-   round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
-   SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
-   KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
-   또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
+      round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
+      SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
+      KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
+      또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
    
    각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
      
