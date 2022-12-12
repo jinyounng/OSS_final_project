@@ -6,10 +6,11 @@
 
 
 ### 1. What you do in your project
-    - 튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것  
-    - data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
-    - 이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다   
-    - classifier와 더불어 가장 잘 맞는 parameter들을 찾아 높은 정확도를 구현한다.
+    
+   - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
+   - 첫번째로는 tumor data set에 가장 알맞는 sklearn classifier 또는 regressor를 찾는 것이고
+   - 두번째로는 가장 잘맞는 classifier에 적합한 parameter를 찾아 훈련시킨다
+   - 마지막으로는 이러한 classifier를 test data set에 넣어 accuracy를 
     
     
 ### 2. Explain the training dataset
