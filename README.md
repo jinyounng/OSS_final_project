@@ -7,13 +7,13 @@
 
 ### 1. What you do in your project
 
-    -튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것
+    - 튜머 데이터 셋을 이용하여 트레인 셋을 4개의 튜머종류에 알맞게 분류하는것
     
-    -data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
+    - data set을 분류하는데 여러 종류의 clasifier가 sklearn 안에 있음
     
-    -이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다
+    - 이 classifier 중에서 data set에 정확도가 가장 높은 classifier를 찾는다
     
-    -classifier와 더불어 가장 잘 맞는 parameter들을 찾아 높은 정확도를 구현한다.
+    - classifier와 더불어 가장 잘 맞는 parameter들을 찾아 높은 정확도를 구현한다.
     
    
 ### 2. Explain the training dataset
@@ -69,7 +69,7 @@
             5.p : metric의 변수 minkowsi의 매개변수이다. p=1이면 맨허튼 거리공식, p=2이면 유클리디안 거리공식을 사용한다.
             여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
 
-   -RandomForest의 hyper-Parameter:
+   - RandomForest의 hyper-Parameter:
    
             1.n_estimators : decision tree의 개수를 의미한다. 증가시킨다고 해서 성능이 무조건적으로 향상되는 것은 아니다.
             2.max_features : decision tree의 max_features와 동일하다. decision tree에서 고려하는 특징 수, 또는 비율이다.
