@@ -1,7 +1,7 @@
 # OSS_final_project_20224397_김진영
 ## Open Source SW Final project
 
-----------------------------------
+
 
 ## update in 12/12(round2)
 
