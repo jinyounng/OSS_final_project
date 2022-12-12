@@ -1,8 +1,9 @@
 # OSS_final_project
 ## Open Source SW Final project
 
-## update in 12/09
-## reupdate in 12/12(round2)
+
+## update in 12/12(round2)
+
 ## 12/12 update imformation
 
               round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
