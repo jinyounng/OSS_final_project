@@ -1,4 +1,4 @@
-# OSS_final_project
+# OSS_final_project_20224397_김진영
 ## Open Source SW Final project
 
 
