@@ -1,6 +1,7 @@
 # OSS_final_project_20224397_김진영
 ## Open Source SW Final project
 
+----------------------------------
 
 ## update in 12/12(round2)
 
@@ -11,7 +12,7 @@
     KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
   - 또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
   - 각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
-
+----------------------------------
 
 ### 1. What you do in your project
     
@@ -19,8 +20,8 @@
    - 첫번째로는 tumor data set에 가장 알맞는 sklearn classifier 또는 regressor를 찾는 것이고
    - 두번째로는 가장 잘맞는 classifier에 적합한 parameter를 찾아 훈련시킨다
    - 마지막으로는 이러한 classifier를 test data set에 넣어 accuracy를 
-    
-    
+----------------------------------
+
 ### 2. Explain the training dataset
 
    - training dataset
@@ -31,7 +32,8 @@
    - 이렇게 생성된 이미지를 np.array로 바꿔준다
    - 마지막으로, train data에 과적합되지 않도록, training, test set으로 나누어준다.
    - 그 후 사용할 classifier에 훈련시킨다
-  
+----------------------------------
+
 ### 3. Explain the algorithm you choose
 
    - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다
@@ -51,7 +53,8 @@
      주로 soft voting모델의 성능이 우수하여 주로 사용된다.
    
    - 나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
-     
+----------------------------------
+
 ### 4. Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
  
@@ -88,7 +91,7 @@
             RandomForest의 hyper-parameter와 거의 동일하다.
             내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
             decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
-
+----------------------------------
     
 #### Feature
     
