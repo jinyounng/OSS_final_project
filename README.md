@@ -18,31 +18,31 @@
     
    - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
    - 첫번째로는 tumor data set에 가장 알맞는 sklearn classifier 또는 regressor를 찾는 것이고
-   - 두번째로는 가장 잘맞는 classifier에 적합한 parameter를 찾아 훈련시킨다
-   - 마지막으로는 이러한 classifier를 test data set에 넣어 accuracy를 
+   - 두번째로는 가장 잘맞는 classifier에 적합한 parameter를 찾아 훈련시킨다.
+   - 마지막으로는 이러한 classifier를 test data set에 넣어 accuracy를 측정한다.
 ----------------------------------
 
 ### 2. Explain the training dataset
 
    - training dataset
-   - ( glioma_tumor, meningioma_tumor, no_tumor, pituitary_tumor)로 분류된다
-   - io.imread function을 사용하여 폴더에 있는 모든 사진을 불러온다
-   - transform.resize(64,64)를 사용하여 이미지를 64 * 64 로 조정한다
-   - color.rgb2gray를 사용하여 이미지의 색을 회색으로 바꾼다
-   - 이렇게 생성된 이미지를 np.array로 바꿔준다
+   - ( glioma_tumor, meningioma_tumor, no_tumor, pituitary_tumor)로 분류된다.
+   - io.imread function을 사용하여 폴더에 있는 모든 사진을 불러온다.
+   - transform.resize(64,64)를 사용하여 이미지를 64 * 64 로 조정한다.
+   - color.rgb2gray를 사용하여 이미지의 색을 회색으로 바꾼다.
+   - 이렇게 생성된 이미지를 np.array로 바꿔준다.
    - 마지막으로, train data에 과적합되지 않도록, training, test set으로 나누어준다.
    - 그 후 사용할 classifier에 훈련시킨다
 ----------------------------------
 
 ### 3. Explain the algorithm you choose
 
-   - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다
+   - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다.
    
    - Extra forest classifier는 random forest와 비슷하지만, decision tree를 만들어 낼 때, 훈련 세트 전체를 사용하기 때문에
      bagging이라고는 할 수 없다. 또한, Split을 할 때 무작위로 feature를 선정한다. 아무 feauter를 선정하여 그 feature에 대해
-     최적의 Node를 분할한다. 이러한 방식은 과대적합을 막고 test set의 정확도를 높이는 효과를 한다. 또한 속도가 빠르다
+     최적의 Node를 분할한다. 이러한 방식은 과대적합을 막고 test set의 정확도를 높이는 효과를 한다. 또한 속도가 빠르다.
      
-   - KNN은 K-Nearist Neighbor으로 최근접 이웃 분류방법이다
+   - KNN은 K-Nearist Neighbor으로 최근접 이웃 분류방법이다.
      KNN은 주변의 가장 가까운 K개의 데이터를 보고 데이터가 속할 그룹을 판단하는 것이다. 
    
    - ensemble : voting, Bagging, Boosting, Staking
