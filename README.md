@@ -5,6 +5,8 @@
 
 ## update in 12/12(round2)
 
+## update in 12/15(last)
+
 #### 12/12 update imformation
 
   - round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
@@ -12,6 +14,14 @@
     KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
   - 또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
   - 각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
+----------------------------------
+#### 12/15 update information
+
+  - round2의 결과가 76.42퍼센트로 나왔지만, 아직 좀 모자른 것 같아 수정을 다시 하였다.
+  - 가장 중요한 변화는 training split에서의 변화이다. training set의 개수를 늘리기 위해 0.001로 스플릿하였다.
+  - svm과 KNN의 parameter는 그대로 유지하였다
+  - svm을 같은 파라미터로 추가하고, 하나를 더 추가하였다
+  - extratree에서는 random_state를 1부터 10000까지 중 가장 성능이 좋았던 1111과 130으로 변경했다.
 ----------------------------------
 
 ### 1. What you do in your project
@@ -64,7 +74,7 @@
                       즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
             4.coef0 : polynomial kernel에 있는 상수항 r.
             5.C : 오류를 얼마나 허용할 것인지 규제한다.
-            등이 있는데, 내가 tuning한 hyper-parameter는 C=11이다.
+            등이 있다.
 
      
    
@@ -75,7 +85,7 @@
             3.n_jobs: neighbor을 검색하기 위해 실행하는 병렬 작업의 수.
             4.n_neighbors : 검색할 이웃의 수
             5.p : metric의 변수 minkowsi의 매개변수이다. p=1이면 맨허튼 거리공식, p=2이면 유클리디안 거리공식을 사용한다.
-            여기서 내가 변경한 hyper-parameter는 n_neighbor=1,p=1이다. neighbor수를 최대한 적게 설정하였다.
+            여기서 내가 변경한 hyper-parameter는 n_neighbor=1이다. neighbor수를 최대한 적게 설정하였다.
 
    - RandomForest의 hyper-Parameter:
    
@@ -99,6 +109,10 @@
              어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
              하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
              많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
+             
+             12/15 update
+             voting안에서의 classification을 무작정 늘린다고 해서 정확도가 올라가는 것이 아니라,
+             가장 알맞은 classification의 갯수가 있다는 것을 깨닫고 5개로 정하였다.
 
      
 
