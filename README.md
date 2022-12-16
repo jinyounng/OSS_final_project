@@ -45,13 +45,17 @@
 
        - KNN은 K-Nearist Neighbor으로 최근접 이웃 분류방법이다.
          KNN은 주변의 가장 가까운 K개의 데이터를 보고 데이터가 속할 그룹을 판단하는 것이다. 
+         
+       - SVM은 Support Vector machine이다
+         그룹을 나누기 위해 선을 그리는 것이라고 이해하면 쉽다. 각 그룹의 최대 거리에 있는
+         중간 지점으로 그룹을 분리하는 선을 그리는 것이 분류정확도를 높이는 최적의 방법이다.
+         각 그룹간의 최대 거리를 margin이라고 한다.
 
        - ensemble : voting, Bagging, Boosting, Staking
          나는 sklearn ensemble 중 voting 모델을 사용했다.
          voting모델은 soft voting 과 Hard voting 모델이 있는데
          Soft Voting모델은 다수의 classifier의 예측 결과값을 다수결로 최종 Class를 결정하는 것
          Hard Voting모델은 다수의 classifier의 예측 결과값간 확률을 평균내어 최종 class를 결정하는 것
-         주로 soft voting모델의 성능이 우수하여 주로 사용된다.
 
        - 나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
 ----------------------------------
