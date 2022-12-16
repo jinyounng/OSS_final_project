@@ -3,12 +3,12 @@
 
 ## Copyright and licensing information : MIT License
 
-### update in 12/12(round2)
+#### update in 12/12(round2)
 
 #### update in 12/16(last)
 
 ## Operationg Instruction
-### I uploaded ipynb file with pickle file. please operate ipynb with pick file.
+#### I uploaded ipynb file with pickle file. please operate ipynb with pick file.
 
 ## Configuration Instruction
 ### 1. What you do in your project
