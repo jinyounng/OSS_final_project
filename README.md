@@ -6,7 +6,7 @@
 
 
 ## 2. Operationg Instruction
-#### :exclamation::exclamation::exclamation:I uploaded ipynb file with pickle file. please operate ipynb with pickle file.:exclamation::exclamation::exclamation:
+#### :exclamation::exclamation::exclamation:  I uploaded ipynb file with pickle file. please operate ipynb with pickle file  :exclamation::exclamation::exclamation:
 
 ## 3. Contact Information
 #### ID: 20224397
