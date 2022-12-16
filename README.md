@@ -14,6 +14,7 @@
 #### E-mail : wlsdud338@cau.ac.kr
 
 ## 4. Configuration Instruction
+
 ### 4.1 What you do in your project
     
    - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
@@ -36,7 +37,7 @@
 
 ### 4.3. Explain the algorithm you choose
 
-   - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다.
+   - Final_classification : SVM, ExtraTrees, KNN and Voting.
    
    - Extra forest classifier는 random forest와 비슷하지만, decision tree를 만들어 낼 때, 훈련 세트 전체를 사용하기 때문에
      bagging이라고는 할 수 없다. 또한, Split을 할 때 무작위로 feature를 선정한다. 아무 feauter를 선정하여 그 feature에 대해
