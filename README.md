@@ -1,5 +1,6 @@
 # :blush:OSS_final_project_20224397_김진영:blush:
-## Open Source SW Final project #### update in 12/12(round2) , 12/16(last)
+## Open Source SW Final project 
+#### (update in 12/12(round2) , 12/16(last))
 
 ## Copyright and licensing information : MIT License
 
