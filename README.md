@@ -8,7 +8,7 @@
 #### update in 12/16(last)
 
 ## Operationg Instruction
-#### I uploaded ipynb file with pickle file. please operate ipynb with pick file.
+#### :exclamation::exclamation::exclamation:I uploaded ipynb file with pickle file. please operate ipynb with pickle file.:exclamation::exclamation::exclamation:
 
 ## Configuration Instruction
 ### 1. What you do in your project
