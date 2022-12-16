@@ -1,15 +1,16 @@
 # :blush:OSS_final_project_20224397_김진영:blush:
 ## Open Source SW Final project
 
-##Copyright and licensing information : MIT License
+## Copyright and licensing information : MIT License
 
 ## update in 12/12(round2)
+
 ## update in 12/16(last)
 
-##Operationg Instruction
-###I uploaded ipynb file with pickle file. please operate ipynb with pick file.
+## Operationg Instruction
+### I uploaded ipynb file with pickle file. please operate ipynb with pick file.
 
-##Configuration Instruction
+## Configuration Instruction
 ### 1. What you do in your project
     
    - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
