@@ -1,14 +1,17 @@
 # :blush:OSS_final_project_20224397_김진영:blush:
 ## Open Source SW Final project
+#### update in 12/12(round2) , 12/16(last)
 
 ## Copyright and licensing information : MIT License
 
-#### update in 12/12(round2)
-
-#### update in 12/16(last)
 
 ## Operationg Instruction
 #### :exclamation::exclamation::exclamation:I uploaded ipynb file with pickle file. please operate ipynb with pickle file.:exclamation::exclamation::exclamation:
+
+## Contact Information
+#### ID: 20224397
+#### Name : jinyoung Kim
+#### E-mail : wlsdud338@cau.ac.kr
 
 ## Configuration Instruction
 ### 1. What you do in your project
@@ -61,10 +64,7 @@
                       즉, 결정경계를 얼마나 유연하게 그릴지 결정한다. 클수록 overfitting 가능성이 높아진다.
             4.coef0 : polynomial kernel에 있는 상수항 r.
             5.C : 오류를 얼마나 허용할 것인지 규제한다.
-            등이 있다.
 
-     
-   
    - KNN의 hyper-Parameter:
    
             1.algorithm : nearest neighbor을 계산하는데 사용하는 알고리즘으로 ball_tree, kd_tree, brute가 있다.
