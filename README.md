@@ -1,29 +1,15 @@
-# OSS_final_project_20224397_김진영
+# :blush:OSS_final_project_20224397_김진영:blush:
 ## Open Source SW Final project
 
-
+##Copyright and licensing information : MIT License
 
 ## update in 12/12(round2)
+## update in 12/16(last)
 
-## update in 12/15(last)
+##Operationg Instruction
+###I uploaded ipynb file with pickle file. please operate ipynb with pick file.
 
-#### 12/12 update imformation
-
-  - round1의 결과가 73퍼센트로 나와 조금 더 수정을 해보았다.
-  - SVM의 parameter 는 verbose=0, kernel='rbf', C=10, coef0=5,degree=9,gamma=1.2 로 바꿔주었고,
-    KNN의 parameter는 n_neighbor은 유지하되, 유클리디안 거리공식을 사용하기 위해p=2로 설정하였다.
-  - 또한, Extra Tree의 최적의 random_state를 찾아 추가해주었다.
-  - 각각의 결과값이 올랐기 때문에, voting 후의 결과값에도 변화가 있을 것이다.
-----------------------------------
-#### 12/15 update information
-
-  - round2의 결과가 76.42퍼센트로 나왔지만, 아직 좀 모자른 것 같아 수정을 다시 하였다.
-  - 가장 중요한 변화는 training split에서의 변화이다. training set의 개수를 늘리기 위해 0.001로 스플릿하였다.
-  - svm과 KNN의 parameter는 그대로 유지하였다
-  - svm을 같은 파라미터로 추가하고, 하나를 더 추가하였다
-  - extratree에서는 random_state를 1부터 10000까지 중 가장 성능이 좋았던 1111과 130으로 변경했다.
-----------------------------------
-
+##Configuration Instruction
 ### 1. What you do in your project
     
    - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
@@ -101,18 +87,8 @@
             RandomForest의 hyper-parameter와 거의 동일하다.
             내가 변경한 hyper-parameter는 n_estimator와 random_state이다.
             decision Tree의 개수를 늘리고, 난수 seed를 설정해주었다.
-----------------------------------
-    
-#### Feature
-    
-             이 코드의 가장 중요한 feature는 voting방식이였는데,
-             어떤 classifier들을 함께 voting해야 가장 좋은 결과가 나오는지 찾아보았고,
-             하나의 classifier만 사용하였을때보다, 약 2~5퍼센트정도의 정확도가 높아진다.
-             많은 시행착오를 통해 svm,xtree,knn을 사용했을 때 가장 좋은 정확도가 나왔다.
-             
-             12/15 update
-             voting안에서의 classification을 무작정 늘린다고 해서 정확도가 올라가는 것이 아니라,
-             가장 알맞은 classification의 갯수가 있다는 것을 깨닫고 5개로 정하였다.
+
+   
 
      
 
