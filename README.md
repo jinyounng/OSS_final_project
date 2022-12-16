@@ -2,19 +2,19 @@
 ## Open Source SW Final project 
 #### (update in 12/12(round2) , 12/16(last))
 
-## Copyright and licensing information : MIT License
+## 1. Copyright and licensing information : MIT License
 
 
-## Operationg Instruction
+## 2. Operationg Instruction
 #### :exclamation::exclamation::exclamation:I uploaded ipynb file with pickle file. please operate ipynb with pickle file.:exclamation::exclamation::exclamation:
 
-## Contact Information
+## 3. Contact Information
 #### ID: 20224397
 #### Name : jinyoung Kim
 #### E-mail : wlsdud338@cau.ac.kr
 
-## Configuration Instruction
-### 1. What you do in your project
+## 4. Configuration Instruction
+### 4.1 What you do in your project
     
    - tumor data set과 sklearn classifier,regression을 이용하여 4가지 종류의 tumor를 분류하는 것이다.
    - 첫번째로는 tumor data set에 가장 알맞는 sklearn classifier 또는 regressor를 찾는 것이고
@@ -22,7 +22,7 @@
    - 마지막으로는 이러한 classifier를 test data set에 넣어 accuracy를 측정한다.
 ----------------------------------
 
-### 2. Explain the training dataset
+### 4.2. Explain the training dataset
 
    - training dataset
    - ( glioma_tumor, meningioma_tumor, no_tumor, pituitary_tumor)로 분류된다.
@@ -34,7 +34,7 @@
    - 그 후 사용할 classifier에 훈련시킨다
 ----------------------------------
 
-### 3. Explain the algorithm you choose
+### 4.3. Explain the algorithm you choose
 
    - 내가 선택한 classifier는 SVM, Extratree, KNN, voting 이다.
    
@@ -55,7 +55,7 @@
    - 나는 SVM,ExtraTree,KNN을 voting하여 최종결과값을 계산했다.
 ----------------------------------
 
-### 4. Explain hyper-parameter of the function
+### 4.4 Explain hyper-parameter of the function
    - SVM의 hyper-parameter:
  
             1.kernel : 알고리즘에 사용되는 kernel을 결정한다. 
